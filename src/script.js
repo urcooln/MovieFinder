@@ -45,7 +45,7 @@ class MovieFinder extends React.Component{
     }
 
     render(){
-        const { searchTerm, results } = this.state; //ES6 Destructuring
+        const { searchTerm, results, error } = this.state; //ES6 Destructuring
 
         return(
             <div className='container'>
@@ -97,6 +97,8 @@ const Movie = (props) => {
         </div>
     )
 }
+
+
 
 const container = document.getElementById('root');
 const root = ReactDOM.createRoot(container);

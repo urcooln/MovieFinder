@@ -69,7 +69,8 @@ var MovieFinder = function (_React$Component) {
         value: function render() {
             var _state = this.state,
                 searchTerm = _state.searchTerm,
-                results = _state.results; //ES6 Destructuring
+                results = _state.results,
+                error = _state.error; //ES6 Destructuring
 
             return React.createElement(
                 'div',
